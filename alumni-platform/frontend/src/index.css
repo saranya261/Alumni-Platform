@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bone: #fdfbf7;
+  --ivy: #0d3b2e;
+  --accent: #c25942;
+  --text: #1a1a1a;
+  --muted: #5c5a56;
+  --border: #e8e5df;
+}
+body { margin: 0; background: var(--bone); color: var(--text); font-family: "Manrope", sans-serif; }
+.font-serif { font-family: "Cormorant Garamond", serif; }
+.overline { font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.card-editorial { background: #fff; border: 1px solid var(--border); transition: all .3s; }
+.card-editorial:hover { transform: translateY(-2px); border-color: rgba(13,59,46,.3); }
+.btn-primary { background: var(--ivy); color: #fff; padding: .65rem 1.5rem; border: none; cursor: pointer; }
+.btn-primary:hover { background: #165947; }
+.btn-accent { background: var(--accent); color: #fff; padding: .65rem 1.5rem; border: none; cursor: pointer; }
+.btn-outline { background: transparent; border: 1px solid var(--border); padding: .6rem 1.5rem; cursor: pointer; }
+.input { width: 100%; border: 1px solid var(--border); padding: .65rem .9rem; background: #fff; }
+.tag { background: var(--bone); border: 1px solid var(--border); padding: .2rem .75rem; font-size: .72rem; border-radius: 9999px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.bubble-me { background: var(--ivy); color: var(--bone); border-radius: 16px 16px 4px 16px; }
+.bubble-them { background: #f3efe8; color: var(--text); border-radius: 16px 16px 16px 4px; }
